@@ -1,0 +1,52 @@
+.episodes {
+    padding-top: 20px;
+    padding-bottom: 90px;
+
+    @include tablet {
+        padding-bottom: 60px;
+    }
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 60px;
+
+        @include mobile {
+            margin-bottom: 20px;
+            align-items: center;
+        }
+    }
+
+    &__content {
+    position: relative;
+
+    @include mobile {
+        position: static;
+        align-items: center;
+    }
+
+    }
+    &__link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-50%, 20px);
+
+
+        @include mobile {
+            position: relative;
+            transform: unset;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+}
+

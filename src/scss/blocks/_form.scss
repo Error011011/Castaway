@@ -1,0 +1,45 @@
+.form {
+
+    @include mobile-xs {
+        width: 100%;
+    }
+    
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__input {
+        margin-bottom: 20px;
+        padding: 25px 10px;
+        width: 525px;
+        background-color: var(--page-bg);
+        border-radius: 6px;
+
+
+        @include mobile-xs {
+            width: 100%;
+        }
+       
+    }
+    
+    &__button {
+        display: block;
+        padding: 20px;
+
+
+        border-radius: 6px;
+
+        font-size: 18px;
+        background-color: var(--accent);
+        color: var(--text-color);
+        transition: background-color 0.3s ease-in;
+    
+    
+        &:hover {
+            background-color: var(--accent-hover);
+        }
+    }
+}
